@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="num_enabled">#fffcf126</color>
+  <color name="num_disabled">#ffF9A41E</color>
+  <color name="num_focused">#ff00aa00</color>
+</resources>

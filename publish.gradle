@@ -1,0 +1,53 @@
+ext.siteUrl = 'https://github.com/sentinelweb/vectoroid-sdk'
+ext.gitUrl = 'https://github.com/sentinelweb/vectoroid-sdk'
+ext.issueUrl = 'https://github.com/sentinelweb/vectoroid-sdk/issues'
+
+group = 'uk.co.sentinelweb'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                name 'Vectoroid SDK for Android'
+                url siteUrl
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'sentinelweb'
+                        name 'Robert Munro'
+                        email 'rrmunro@gmail.com'
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+                }
+            }
+        }
+    }
+}
+bintray {
+    user = SW_JCENTER_USER
+    key = SW_JCENTER_API_KEY
+
+    configurations = ['archives'] //When uploading configuration files
+    pkg {
+        repo = 'generic'
+        websiteUrl = siteUrl
+        issueTrackerUrl = issueUrl
+        vcsUrl = gitUrl
+        licenses = ['Apache-2.0']
+        labels = ['aar', 'android', 'vector']
+        publicDownloadNumbers = true
+        version {
+
+        }
+    }
+}

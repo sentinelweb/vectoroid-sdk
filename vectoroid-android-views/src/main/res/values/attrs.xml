@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--Common -->
+	<attr name="min" format="integer" />
+    <attr name="max" format="integer" />
+    <attr name="thumb" format="reference" />
+    <attr name="thumbWidth" format="dimension" />
+    <attr name="thumbHeight" format="dimension" />
+    <attr name="trackHeight" format="dimension" />
+    <attr name="textSize" format="dimension" />
+    <attr name="label" format="string" />
+	<!-- Number Scroller -->
+     <declare-styleable name="NumberScroller">
+        <attr name="min" />
+    	<attr name="max" />
+        <attr name="value" format="integer" />
+        <attr name="largecrement" format="integer" />
+        <attr name="fg" format="reference" />
+        <attr name="fgMargin" format="dimension" />
+        <attr name="digits" format="integer" /> 
+    </declare-styleable>  
+    
+    <declare-styleable name="GlowButton">
+        <attr name="text" format="string" />
+        <attr name="iconref" format="reference" />
+        <attr name="cbut" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="Slider">
+        <attr name="thumb" />
+        <attr name="thumbWidth"  />
+        <attr name="thumbHeight" />
+        <attr name="thumbColor" format="color" />
+        <attr name="trackColor" format="color" />
+        <attr name="trackHeight"  />
+        <attr name="textSize"  />
+        <attr name="min" />
+    	<attr name="max" />
+        <attr name="label" />
+        <attr name="forceInt" format="boolean" />
+        <attr name="valuef" format="float"/>
+        
+    </declare-styleable>
+    
+    <declare-styleable name="GradientEdit">
+        <attr name="thumb"  />
+        <attr name="thumbWidth" />
+        <attr name="thumbHeight"/>
+        <attr name="trackHeight" />
+        <attr name="textSize" />
+        <attr name="label"  />
+    </declare-styleable>
+     <declare-styleable name="VerticalLabelView">
+        <attr name="text" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" />
+    </declare-styleable>
+</resources>

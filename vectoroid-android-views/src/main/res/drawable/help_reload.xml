@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/help_t1_i_reload_on_50" />
+    <item android:state_pressed="true" android:drawable="@drawable/help_t1_i_reload_pr_50" />
+    <item android:state_enabled="false" android:drawable="@drawable/help_t1_i_reload_dis_50" />
+    <item android:state_focused="true" android:drawable="@drawable/help_t1_i_reload_foc_50" />
+    <item android:drawable="@drawable/help_t1_i_reload_off_50" />
+</selector>

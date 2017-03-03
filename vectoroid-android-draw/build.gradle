@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+apply from: '../publish.gradle'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "https://dl.bintray.com/sentinelweb/generic/"
+    }
+}
+
+dependencies {
+//    compile project(':vectoroid-android-views')
+//    compile project(':vectoroid-android-base')
+    compile 'uk.co.sentinelweb:vectoroid-android-views:0.1'
+    compile 'uk.co.sentinelweb:vectoroid-android-base:0.1'
+    compile 'com.google.code.gson:gson:2.1'
+}
+
+ext.versionRel = '0.1'
+version = versionRel
+ext.descriptionRel = 'Vectoroid SDK for Android - Drawing'
+ext.projectDesc = ext.descriptionRel
+
+bintray {
+    pkg {
+        name = build.project.name
+        desc = descriptionRel
+        version {
+            desc = descriptionRel
+            name = versionRel
+            vcsTag = versionRel
+            attributes = ['gradle-plugin': "$group:$build.project.name:$versionRel"]
+        }
+    }
+}
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                name projectDesc
+            }
+        }
+    }
+}

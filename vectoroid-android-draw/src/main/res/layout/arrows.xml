@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:layout_width="fill_parent"  android:layout_height="fill_parent" android:orientation="vertical">
+  <LinearLayout  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+      <ImageView  android:id="@+id/arr_none" style="@style/DarkButton" android:src="@drawable/i_arr_none"/>
+	  <ImageView android:id="@+id/arr_sgl_but" style="@style/DarkButton" android:src="@drawable/i_arr_sg_op_fwd"/>
+	  <ImageView android:id="@+id/arr_dbl_but" style="@style/DarkButton" android:src="@drawable/i_arr_db_op_fwd"/>
+	  <ImageView android:id="@+id/arr_sq_but" style="@style/DarkButton" android:src="@drawable/i_arr_square"/>
+	  <ImageView android:id="@+id/arr_circle_but" style="@style/DarkButton" android:src="@drawable/i_arr_circle"/>
+	  <ImageView android:id="@+id/arr_diamond_but" style="@style/DarkButton" android:src="@drawable/i_arr_diamond"/>
+	</LinearLayout>		
+	<CheckBox android:id="@+id/arr_closed_chk" android:layout_width="fill_parent"  android:layout_height="wrap_content" android:text="@string/closed"/>
+	<CheckBox android:id="@+id/arr_fill_chk"  android:layout_width="fill_parent"  android:layout_height="wrap_content" android:text="@string/filled"/>
+	<CheckBox android:id="@+id/arr_inside_chk" android:layout_width="fill_parent"  android:layout_height="wrap_content" android:text="@string/face_inside"/>
+	<LinearLayout  android:layout_width="fill_parent"  android:layout_height="wrap_content">
+      <TextView android:layout_width="wrap_content"  android:layout_height="wrap_content" android:text="@string/size"/>
+      <Button android:id="@+id/arr_sml_but" style="@style/DarkButton" android:text="@string/arr_s"/>
+	  <Button android:id="@+id/arr_med_but" style="@style/DarkButton" android:text="@string/arr_m"/>
+	  <Button android:id="@+id/arr_lrg_but" style="@style/DarkButton" android:text="@string/arr_l"/>
+	</LinearLayout>	
+</LinearLayout>

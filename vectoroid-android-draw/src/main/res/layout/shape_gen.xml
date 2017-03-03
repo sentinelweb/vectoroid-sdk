@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  xmlns:drawview="http://schemas.android.com/apk/res-auto"
+  	android:layout_width="fill_parent"  android:layout_height="fill_parent"  android:orientation="vertical" >
+  	<LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content"  >
+  		<Button android:id="@+id/shapedialog_gen_tab_but" android:layout_width="150dp" android:layout_height="40dp" android:text="@string/generator"/>
+  		<Button android:id="@+id/shapedialog_pre_tab_but" android:layout_width="150dp" android:layout_height="40dp" android:text="@string/preset"/>
+  	</LinearLayout>	
+  	<LinearLayout  android:id="@+id/shapedialog_gen_ctnr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" >
+	 	<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"  >
+		  	<LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+				 <LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" >
+				  	<co.uk.sentinelweb.commonlibs.globutton.GlowButton android:id="@+id/shapedialog_ngon_but" style="@style/DarkButton" drawview:text="N-gon" drawview:iconref="@drawable/i_shape"/>
+				    <co.uk.sentinelweb.commonlibs.globutton.GlowButton android:id="@+id/shapedialog_star_but" style="@style/DarkButton" drawview:text="Star" drawview:iconref="@drawable/i_star"/>
+				    <co.uk.sentinelweb.commonlibs.globutton.GlowButton android:id="@+id/shapedialog_rose_but" style="@style/DarkButton" drawview:text="Rose" drawview:iconref="@drawable/i_rose" />
+				 </LinearLayout>
+				 <LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content" >
+				  	<co.uk.sentinelweb.commonlibs.globutton.GlowButton android:id="@+id/shapedialog_hypo_but" style="@style/DarkButton" drawview:text="Hypo" drawview:iconref="@drawable/i_hypocycloid"/>
+				  	<co.uk.sentinelweb.commonlibs.globutton.GlowButton android:id="@+id/shapedialog_epi_but" style="@style/DarkButton" drawview:text="Epi" drawview:iconref="@drawable/i_epicycloid" />
+				  	<co.uk.sentinelweb.commonlibs.globutton.GlowButton android:id="@+id/shapedialog_liss_but" style="@style/DarkButton" drawview:text="Lissajous" drawview:iconref="@drawable/i_lissajous"/>
+				 </LinearLayout>
+				 <co.uk.sentinelweb.commonlibs.numscroll.NumberScroller android:id="@+id/shapedialog_sides_num"  android:background="@drawable/numscroller_bg" drawview:fgMargin="3dp" 
+					  android:gravity="center_horizontal" android:layout_height="fill_parent" android:layout_width="130dp" drawview:fg="@drawable/numscroller_cover_single" 
+					  android:shadowColor="#880000" android:textColor="@color/number_csl" android:shadowDx="5" android:shadowDy="5" android:shadowRadius="5" android:textSize="50dp" 
+					  drawview:max="32" drawview:min="3"  drawview:value="0" drawview:digits="2" android:textStyle="bold"  android:text="@string/num_sc_def_00" android:focusable="true" android:paddingTop="5dp" android:layout_gravity="center_horizontal"/>
+				 <CheckBox android:id="@+id/shapedialog_outline_chk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/take_outline"/>
+			</LinearLayout>
+			<co.uk.sentinelweb.views.draw.view.ShapeView  android:id="@+id/shapedialog_preview" android:layout_width="250dp" android:layout_height="250dp"  android:layout_marginLeft="10dp" 
+			    android:layout_marginRight="10dp"/>
+		</LinearLayout>	
+		<co.uk.sentinelweb.commonlibs.slider.Slider android:id="@+id/shapedialog_mod" android:layout_height="wrap_content" android:layout_width="fill_parent" drawview:max="10" 
+		    drawview:label="Modifier" drawview:thumb="@drawable/butt_short" />
+	</LinearLayout>	
+	<FrameLayout android:id="@+id/shapedialog_pre_ctnr" android:layout_width="fill_parent" android:layout_height="wrap_content"  >
+	     <GridView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/shapedialog_pre_grid" 
+		      android:numColumns="4" android:layout_above="@+id/loader_buttons_ctnr" android:layout_below="@+id/loader_ads" 
+		     android:horizontalSpacing="5dp" android:verticalSpacing="5dp"/>
+	    
+	</FrameLayout>
+</LinearLayout>
+

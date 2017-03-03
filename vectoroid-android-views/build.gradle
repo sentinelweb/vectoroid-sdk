@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+apply from: '../publish.gradle'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 10
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+
+}
+
+ext.versionRel = '0.1'
+version = versionRel
+ext.descriptionRel = 'Vectoroid SDK for Android - Utility views'
+ext.projectDesc = ext.descriptionRel
+
+bintray {
+    pkg {
+        name = build.project.name
+        desc = descriptionRel
+        version {
+            desc = descriptionRel
+            name = versionRel
+            vcsTag = versionRel
+            attributes = ['gradle-plugin': "$group:$build.project.name:$versionRel"]
+        }
+    }
+}
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                name projectDesc
+            }
+        }
+    }
+}

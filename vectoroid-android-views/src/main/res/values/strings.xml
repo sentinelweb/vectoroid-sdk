@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">CommonsViewsLibrary</string>
+    <string name="help_err_no_inet">There is no internet connection</string>
+    <string name="help_err_no_inet2">Please check your settings</string>
+    <string name="help_website">http://www.sentinelweb.co.uk/apps/silenttimer/</string>
+    
+    <string name="help_quick_help">::
+::<b><i>Very quick help</i></b>
+::
+::1. Select CD (countdown timer) or ET (end time).
+::2. Drag on the numbers vertically to set the desired time.
+::3. Press \'Set timer\' ... the button turns red while the timer is engaged.
+	 </string>
+	 <string name="ge_opt_add_l">Add new point (left)</string>
+	 <string name="ge_opt_add_r">Add new point (right)</string>
+	 <string name="ge_opt_del">Delete</string>
+	 <string name="ge_opt_title">Options</string>
+	 
+</resources>

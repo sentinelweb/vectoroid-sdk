@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drawview_nothing_loaded">Nothing loaded ...</string>
+    <string name="drawview_please_wait">Please wait ...</string>
+    <string name="drawview_dialog_but_dismiss">Dismiss</string>
+    <string name="drawview_dialog_title_stroke_info">Stroke info</string>
+    <string name="drawview_dialog_title_stroke_options">Stroke options</string>
+    <string name="drawview_edit_text">Edit text</string>
+    <string name="drawview_info">Info</string>
+    <string name="drawview_split">Split</string>
+    <string name="drawview_edit_points_toggle">Edit points (toggle)</string>
+    <string name="drawview_close_stroke">Close stroke</string>
+    <string name="drawview_fill_stroke">Fill stroke</string>
+    <string name="drawview_dialog_title_points_edit_options">Points edit options</string>
+    <string name="drawview_dialog_title_linedraw_options">Linedraw Options</string>
+    <string name="drawview_snapping">Snapping</string>
+    <string name="drawview_ok">OK</string>
+    <string name="drawview_dialog_title_freedraw_options">Freedraw options</string>
+    <string name="drawview_autosmooth_large">AutoSmooth Large</string>
+    <string name="drawview_autosmooth_medium">AutoSmooth Medium</string>
+    <string name="drawview_autosmooth_small">AutoSmooth Small</string>
+    <string name="drawview_no_autosmooth">No AutoSmooth</string>
+    <string name="drawview_edit_strokes">Edit strokes</string>
+    <string name="drawview_gradient">Gradient</string>
+    <string name="drawview_select_area">Select Area</string>
+    <string name="drawview_set_anchor">Set Anchor</string>
+    <string name="drawview_zoom">Zoom</string>
+    <string name="drawview_pan">Pan</string>
+    <string name="drawview_panzoom">Pan &amp; Zoom</string>
+    
+    <string name="drawview_edit_points">Edit points</string>
+    <string name="drawview_text">Text</string>
+    <string name="drawview_rect">Rect</string>
+    <string name="drawview_circle">Circle</string>
+    <string name="drawview_line">Line</string>
+    <string name="drawview_free">Free</string>
+    <string name="drawview_shape">Shape</string>
+    <string name="drawview_draw">Draw</string>
+    
+    <string name="drawview_cancel">Cancel</string>
+    <string name="dialog_but_cancel">Cancel</string>
+    <string name="dialog_but_ok">OK</string>
+    
+    <string name="points">Points</string>
+    <string name="strokes">Strokes</string>
+    <string name="dialog_title_align_distribute">Align/Distribute </string>
+    <string name="internal">Internal</string>
+    <string name="svg">SVG</string>
+    <string name="zip">ZIP</string>
+    <string name="embed">Embed Assets</string>
+    
+    <!-- arrow dialog -->
+    <string name="closed">Closed</string>
+    <string name="filled">Filled</string>
+    <string name="face_inside">Face inside</string>
+    <string name="size">Size</string>
+    <string name="arr_s">S</string>
+    <string name="arr_m">M</string>
+    <string name="arr_l">L</string>
+    
+    <string name="dialog_selimg_use_current">Use current</string>
+    <string name="dialog_selimg_take_picture">Take picture</string>
+    <string name="dialog_selimg_choose_picture">Choose picture</string>
+    <string name="dialog_selimg_choose_existing_asset">Choose existing asset</string>
+    <string name="dialog_selimg_choose_colour">Choose colour</string>
+    <string name="dialog_selimg_reset_to_default">Reset to default</string>
+    
+    <string name="dialog_combine_title">Combine menu</string>
+    <!-- <string name="dialog_combine_join">Join all strokes together</string> -->
+    <string name="dialog_combine_join_reorder">Join closest</string>
+    <string name="dialog_combine_combine">Combine together (leaves breaks)</string>
+    <string name="dialog_combine_group">Group</string>
+    <string name="dialog_combine_union">Union</string>
+    <string name="dialog_combine_inter">Intersection</string>
+    <string name="dialog_combine_diff">Diff</string>
+    <string name="dialog_combine_xor">XOR</string>
+    <string name="dialog_combine_join">Join</string>
+    <string name="dialog_combine_outline">Take outline</string>
+    
+    <string name="dialog_combined_title">Multiple objects menu</string>
+    <string name="dialog_cxt_menu_title">Selection operations</string>
+    
+    <string name="dialog_title_image_capture">Image capture</string>
+    <string name="dialog_title_image_source">Select image source</string>
+    <string name="dialog_title_select_picture">Choose image from ...</string>
+    <string name="dialog_title_select_camera">Select camera</string>
+    
+    <string name="dialog_grp_title">Group menu</string>
+    <string name="dialog_grp_opt_ungroup">Ungroup</string>
+    <string name="dialog_grp_opt_flatten">Flatten</string>
+    <string name="dialog_grp_opt_info">Info</string>
+    <string name="dialog_grp_info_title">Group Info</string>
+    
+    <string name="dialog_stroke_title">Stroke menu</string>
+    <string name="dialog_stroke_opt_edit_points">Edit points</string>
+    <string name="dialog_stroke_opt_info">Info</string>
+    <string name="dialog_stroke_opt_close">Close All</string>
+    <string name="dialog_stroke_opt_unclose">Un-Close All</string>
+    <string name="dialog_stroke_opt_change_font">Change font</string>
+    <string name="dialog_stroke_opt_edit_text">Edit text</string>
+    <string name="dialog_stroke_opt_fixwidth">Fit text in width</string>
+    <string name="dialog_stroke_opt_varwidth">Vary width for text</string>
+    <string name="dialog_stroke_opt_textpath">Set text path</string>
+    <string name="dialog_stroke_opt_smooth">Smooth</string>
+    
+    <string name="dialog_group_title">Group menu</string>
+    
+    <string name="dialog_stroke_opt_holes_even">Holes Even</string>
+    <string name="dialog_stroke_opt_holes_winding">Holes winding</string>
+    <string name="dialog_stroke_opt_lock">Lock</string>
+    <string name="dialog_stroke_opt_unlock">UnLock</string>
+    
+    <string name="dialog_msg_use_previously_captured_image">Use previously captured image?</string>
+    
+    <string name="dialog_but_capture">Capture</string>
+    <string name="dialog_but_load">Load</string>
+    
+    <string name="dialog_title_points_anchor">Points anchor</string>
+    <string name="dialog_title_shapes_anchor">Shapes anchor</string>
+    
+    <string name="dialog_title_flip">Flip </string>
+    <string name="dialog_item_flip_vertically_anchor">Flip Vertically (using anchor)</string>
+    <string name="dialog_item_flip_horizontally_anchor">Flip horizontally (using anchor)</string>
+    <string name="dialog_item_flip_vertically">Flip Vertically</string>
+    <string name="dialog_item_flip_horizontally">Flip horizontally</string>
+    
+    <string name="dialog_title_rotate_strokes">Rotate strokes </string>
+    <string name="dialog_item_rot_270_degrees">270 degrees</string>
+    <string name="dialog_item_rot_180_degrees">180 degrees</string>
+    <string name="dialog_item_rot_90_degrees">90 degrees</string>
+    
+    <string name="dialog_title_select_font">Select font</string>
+   
+    <string name="dialog_title_select_file">Select file</string>
+    <string name="dialog_title_save_file">Save file</string>
+    <string name="dialog_but_save_only">Save only</string>
+    <string name="dialog_but_save_publish">Save &amp; Publish</string>
+    <string name="save">Save</string>
+    <string name="dialog_title_enter_name">Enter name</string>
+    <string name="dialog_title_new_drawing">New Drawing</string>
+    <string name="dialog_title_new_set">New Set</string>
+     
+    <string name="dialog_title_shape">Make shape</string>
+   <string name="dialog_title_stoke_tip">Stroke tip:</string>
+   <string name="start">Start</string>
+   <string name="end">End</string>
+   <string name="dialog_break_title">Stroke breaks</string>
+   <string name="dialog_break_opt_solid">Solid</string>
+   <string name="dialog_break_opt_dot">Dotted</string>
+   <string name="dialog_break_opt_dashed">Dashed</string>
+   <string name="dialog_break_opt_dotdash">Dot dashed</string>
+   
+    <string name="dialog_title_select_layer">Select layer</string>
+    <string name="dialog_title_layer_operations">Current layer</string>
+    <string name="dialog_layer_add">Add layer</string>
+    <string name="dialog_layer_del_current">Delete current layer</string>
+    <string name="dialog_layer_raise_current">Raise current layer</string>
+    <string name="dialog_layer_lower_current">Lower current layer</string>
+    <string name="dialog_layer_hide_current">Hide current layer</string>
+    <string name="dialog_layer_unhide_current">Show current layer</string>
+    <string name="dialog_layer_lock_current">Lock current layer</string>
+    <string name="dialog_layer_unlock_current">Unlock current layer</string>
+    <string name="dialog_layer_info">Info</string>
+    <string name="dialog_layer_opt_drawing">Drawing</string>
+    
+    <string name="dialog_title_stroke_info">Stroke Info</string>
+    <string name="dialog_title_group_info">Group Info</string>
+    <string name="dialog_title_drawing_info">Drawing Info</string>
+    <string name="dialog_title_layer_info">Layer info</string>
+    
+    <string name="dialog_text_title">Text settings</string>
+    
+    <string name="err_save_bitmap">Error saving bitmap ...</string>
+    <string name="toast_the_image_could_not_be_loaded_at_full_resoultion_due_to_memory_limitations_">The image could not be loaded at full resolution due to memory limitations.</string>
+    <string name="toast_the_image_could_not_be_loaded_due_to_memory_limitations_">The image could not be loaded due to memory limitations.</string>
+    <!--
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    -->
+    <string name="toast_no_more_undos">No more undos</string>
+    <string name="toast_no_more_redos">No more redos</string>
+    <string name="error_no_image">No Image</string>
+    <string name="err_could_not_get_the_picture">Could not get the picture, sorry</string>
+    <string name="font_sample">ABC !? abc ,.</string>
+    <string name="take_outline">Take outline</string>
+    <string name="num_sc_def_00">00</string>
+    <string name="generator">Generator</string>
+    <string name="preset">Preset</string>
+    
+    
+   
+</resources>

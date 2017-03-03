@@ -1,1 +1,1 @@
-include ':vectoroid-android-base'//, ':vectoroid-java-compat',':app', ':vectoroid-java'
+include ':vectoroid-android-base', ':vectoroid-android-draw', ':vectoroid-android-views'//, ':vectoroid-draw'//, ':vectoroid-java-compat',':app', ':vectoroid-java'

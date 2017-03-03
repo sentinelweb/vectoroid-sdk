@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+	<FrameLayout android:id="@+id/help_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" ></FrameLayout>
+	<LinearLayout android:id="@+id/help_toolbar_ctnr"  android:layout_width="wrap_content" android:layout_alignParentRight="true" android:orientation="vertical" android:background="@drawable/help_title_bg_l" android:layout_height="wrap_content">
+		<ProgressBar android:layout_height="10dp" android:id="@+id/help_toolbar_progress" style="?android:attr/progressBarStyleHorizontal"
+						android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="80dp" android:maxWidth="80dp"></ProgressBar>
+			
+		<LinearLayout android:id="@+id/help_toolbar_tools_ctnr" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_gravity="right">
+			<ImageView android:src="@drawable/help_pop" android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/help_toolbar_pop_but" android:visibility="gone" android:focusable="true"/>
+			<ImageView android:src="@drawable/help_reload" android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/help_toolbar_reload_but" android:visibility="gone" android:focusable="true"/>
+			<ImageView android:src="@drawable/help_stop" android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/help_toolbar_stop_but" android:visibility="gone" android:focusable="true"/>
+			<ImageView android:src="@drawable/help_ellipsis" android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/help_toolbar_more_but" android:focusable="true"/>
+			<ImageView android:src="@drawable/help_close" android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/help_toolbar_close_but" android:visibility="visible" android:focusable="true"/>
+		</LinearLayout>
+		<TextView android:id="@+id/help_toolbar_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:layout_marginTop="-8dp" android:layout_gravity="right" android:visibility="gone" android:textSize="15dp"/>
+	</LinearLayout>  
+</RelativeLayout>  
+ 

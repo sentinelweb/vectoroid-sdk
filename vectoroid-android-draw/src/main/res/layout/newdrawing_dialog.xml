@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/res-auto"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  <TextView android:layout_width="wrap_content"  android:layout_height="wrap_content" android:text="Dimensions" android:padding="5dp"/>
+  <LinearLayout android:layout_width="fill_parent"  android:layout_height="100dp">
+	  <co.uk.sentinelweb.commonlibs.numscroll.NumberScroller android:background="@drawable/numscroller_bg" myapp:fgMargin="3dp" myapp:fg="@drawable/numscroller_cover" 
+	  android:gravity="center_horizontal" android:layout_height="fill_parent" android:layout_width="130dp" android:id="@+id/nd_width" myapp:largecrement="20"
+	  android:shadowColor="#880000" android:textColor="@color/number_csl" android:shadowDx="5" android:shadowDy="5" android:shadowRadius="5" android:textSize="50dp" 
+	  myapp:max="1024" myapp:min="40"  myapp:value="0" myapp:digits="2" android:textStyle="bold"  android:text="00" android:focusable="true" android:paddingTop="5dp" />
+	  
+	  <TextView android:layout_width="wrap_content"  android:layout_height="wrap_content" android:text="x" android:padding="5dp"/>
+	  
+	  <co.uk.sentinelweb.commonlibs.numscroll.NumberScroller android:background="@drawable/numscroller_bg" myapp:fgMargin="3dp" myapp:fg="@drawable/numscroller_cover" 
+	  android:gravity="center_horizontal" android:layout_height="fill_parent" myapp:value="0" android:id="@+id/nd_height" android:layout_width="130dp" myapp:largecrement="20"
+	  android:shadowColor="#880000" android:shadowDx="5" android:shadowDy="5" android:shadowRadius="5" android:textColor="@color/number_csl" myapp:max="1024" myapp:min="40" 
+	  android:textSize="50dp"  myapp:digits="2" android:textStyle="bold"  android:text="00"  android:focusable="true" android:paddingTop="5dp" />
+	</LinearLayout>
+</LinearLayout>

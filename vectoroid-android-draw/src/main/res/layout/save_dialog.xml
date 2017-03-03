@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:drawview="http://schemas.android.com/apk/res-auto"
+  android:layout_height="wrap_content" android:layout_width="fill_parent">
+	<EditText android:text="" android:layout_height="wrap_content" android:id="@+id/savedialog_edit" android:layout_width="fill_parent" ></EditText>
+	<co.uk.sentinelweb.commonlibs.globutton.GlowButton style="@style/DarkButton" drawview:text="Set"	drawview:iconref="@drawable/i_ellipsis" android:id="@+id/savedialog_sets_but" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/savedialog_edit"></co.uk.sentinelweb.commonlibs.globutton.GlowButton>
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent"  android:layout_below="@+id/savedialog_edit">
+		<CheckBox android:id="@+id/savedialog_json_chk"	 android:layout_height="wrap_content"	android:text="@string/internal" android:layout_width="wrap_content"></CheckBox>			
+		<CheckBox android:id="@+id/savedialog_svg_chk"	 android:layout_height="wrap_content"	android:text="@string/svg" android:layout_width="wrap_content"></CheckBox>			
+		<CheckBox android:id="@+id/savedialog_zip_chk"	 android:layout_height="wrap_content"	android:text="@string/zip" android:layout_width="wrap_content"></CheckBox>			
+		<CheckBox android:id="@+id/savedialog_embed_chk"	 android:layout_height="wrap_content"	android:text="@string/embed" android:layout_width="wrap_content"></CheckBox>			
+	</LinearLayout>	
+</RelativeLayout> 

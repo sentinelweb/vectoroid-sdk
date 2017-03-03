@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="240dp" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"  xmlns:app="http://schemas.android.com/apk/res/co.uk.sentinelweb.commonlibs">
+<LinearLayout android:orientation="vertical" android:layout_width="240dp" android:layout_height="wrap_content">
+	<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"	android:layout_height="wrap_content" android:text="(Press the dot to select)" android:textSize="12dp"></TextView>
+	<LinearLayout android:id="@+id/LinearLayout02"	android:layout_height="wrap_content" android:layout_width="fill_parent"	android:orientation="vertical">
+	<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent"	android:orientation="horizontal">
+		<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/cpick_wheel_ctnr"></FrameLayout>
+		<ScrollView android:id="@+id/ScrollView01" android:paddingTop="5px" android:layout_marginLeft="10dp"
+			android:layout_height="fill_parent" android:layout_width="wrap_content">
+			<LinearLayout android:layout_height="wrap_content"	android:id="@+id/cpick_swatch_ctnr" android:layout_width="wrap_content"
+				android:orientation="vertical"></LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+	<RelativeLayout android:layout_height="wrap_content" android:id="@+id/cpick_sat_ctnr" android:layout_width="fill_parent">						
+			<!-- 	app:max="255" app:label="Saturation" app:thumb="@drawable/butt_short" -->
+			<co.uk.sentinelweb.commonlibs.slider.Slider android:layout_height="wrap_content" android:id="@+id/cpick_sat_sldr"	android:layout_width="fill_parent"  ></co.uk.sentinelweb.commonlibs.slider.Slider>
+	</RelativeLayout>
+	<RelativeLayout android:layout_height="wrap_content" android:id="@+id/cpick_value_ctnr" android:layout_width="fill_parent">						
+			<!-- app:max="255" app:label="Value" app:thumb="@drawable/butt_short"-->
+			<co.uk.sentinelweb.commonlibs.slider.Slider android:layout_height="wrap_content" android:id="@+id/cpick_value_sldr"	android:layout_width="fill_parent" ></co.uk.sentinelweb.commonlibs.slider.Slider>
+	</RelativeLayout>
+	<RelativeLayout android:layout_height="wrap_content" android:id="@+id/cpick_alpha_ctnr" android:layout_width="fill_parent">		
+	<!-- 	app:max="255" app:label="Alpha" app:thumb="@drawable/butt_short" -->			
+			<co.uk.sentinelweb.commonlibs.slider.Slider android:layout_height="wrap_content" android:id="@+id/cpick_alpha_sldr"	android:layout_width="fill_parent" ></co.uk.sentinelweb.commonlibs.slider.Slider>
+	</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

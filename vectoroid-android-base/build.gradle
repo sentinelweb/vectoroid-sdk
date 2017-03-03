@@ -1,18 +1,8 @@
-buildscript{
-    repositories{
-        jcenter()
-    }
-    dependencies{
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
-    }
-}
 
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-
-group = 'uk.co.sentinelweb'
-version = '0.1'
+apply plugin: 'com.github.dcendents.android-maven'
+apply from: '../publish.gradle'
 
 android {
     compileSdkVersion 25
@@ -55,29 +45,20 @@ dependencies {
 
 }
 
-def siteUrl = 'https://github.com/sentinelweb/vectoroid-sdk'
-def gitUrl = 'https://github.com/sentinelweb/vectoroid-sdk'
+ext.versionRel = '0.1.1'
+version = versionRel
+ext.descriptionRel = 'Vectoroid SDK for Android - Base'
+ext.projectDesc = ext.descriptionRel
 
 bintray {
-    user = SW_JCENTER_USER
-    key = SW_JCENTER_API_KEY
-
-    configurations = ['archives'] //When uploading configuration files
     pkg {
-        repo = 'generic'
-        name = 'vectoroid-android-base'
-        desc = 'Vectoroid SDK for android'
-        websiteUrl = siteUrl
-        issueTrackerUrl = 'https://github.com/sentinelweb/vectoroid-sdk/issues'
-        vcsUrl = gitUrl
-        licenses = ['Apache-2.0']
-        labels = ['aar', 'android', 'vector']
-        publicDownloadNumbers = true
+        name = build.project.name
+        desc = descriptionRel
         version {
-            name = '0.1'
-            desc = 'Vectoroid SDK for Android'
-            vcsTag = '0.1'
-            attributes = ['gradle-plugin': 'uk.co.sentinelweb:vectoroid-android-base:0.1']
+            desc = descriptionRel
+            name = versionRel
+            vcsTag = versionRel
+            attributes = ['gradle-plugin': "$group:$build.project.name:$versionRel"]
         }
     }
 }
@@ -86,27 +67,7 @@ install {
     repositories.mavenInstaller {
         pom {
             project {
-                packaging 'aar'
-                name 'Vectoroid SDK for Android'
-                url siteUrl
-                licenses {
-                    license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-                developers {
-                    developer {
-                        id 'sentinelweb'
-                        name 'Robert Munro'
-                        email 'rrmunro@gmail.com'
-                    }
-                }
-                scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
-                }
+                name projectDesc
             }
         }
     }
