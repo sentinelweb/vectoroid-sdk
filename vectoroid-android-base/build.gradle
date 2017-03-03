@@ -1,11 +1,25 @@
+buildscript{
+    repositories{
+        jcenter()
+    }
+    dependencies{
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+    }
+}
+
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+group = 'uk.co.sentinelweb'
+version = '0.1'
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 9
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -39,6 +53,61 @@ dependencies {
     // https://mvnrepository.com/artifact/junit/junit
     testCompile 'junit:junit:4.12'
 
+}
 
+def siteUrl = 'https://github.com/sentinelweb/vectoroid-sdk'
+def gitUrl = 'https://github.com/sentinelweb/vectoroid-sdk'
 
+bintray {
+    user = SW_JCENTER_USER
+    key = SW_JCENTER_API_KEY
+
+    configurations = ['archives'] //When uploading configuration files
+    pkg {
+        repo = 'generic'
+        name = 'vectoroid-android-base'
+        desc = 'Vectoroid SDK for android'
+        websiteUrl = siteUrl
+        issueTrackerUrl = 'https://github.com/sentinelweb/vectoroid-sdk/issues'
+        vcsUrl = gitUrl
+        licenses = ['Apache-2.0']
+        labels = ['aar', 'android', 'vector']
+        publicDownloadNumbers = true
+        version {
+            name = '0.1'
+            desc = 'Vectoroid SDK for Android'
+            vcsTag = '0.1'
+            attributes = ['gradle-plugin': 'uk.co.sentinelweb:vectoroid-android-base:0.1']
+        }
+    }
+}
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                name 'Vectoroid SDK for Android'
+                url siteUrl
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'sentinelweb'
+                        name 'Robert Munro'
+                        email 'rrmunro@gmail.com'
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+                }
+            }
+        }
+    }
 }

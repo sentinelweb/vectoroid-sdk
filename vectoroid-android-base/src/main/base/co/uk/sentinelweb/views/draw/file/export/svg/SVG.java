@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import co.uk.sentinelweb.views.draw.file.SaveFile;
@@ -27,6 +28,8 @@ public class SVG {
 			out.close();
 			return true;
 		} catch (final FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (final IOException e) {
 			e.printStackTrace();
 		}
 		return false;

@@ -1,0 +1,1 @@
+include ':vectoroid-android-base'//, ':vectoroid-java-compat',':app', ':vectoroid-java'
