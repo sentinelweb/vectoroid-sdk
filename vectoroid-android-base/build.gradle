@@ -2,7 +2,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
-apply from: '../publish.gradle'
 
 android {
     compileSdkVersion 25
@@ -28,6 +27,7 @@ android {
         }
     }
 }
+apply from: '../publish.gradle'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -45,7 +45,7 @@ dependencies {
 
 }
 
-ext.versionRel = '0.1.1'
+ext.versionRel = '0.1'
 version = versionRel
 ext.descriptionRel = 'Vectoroid SDK for Android - Base'
 ext.projectDesc = ext.descriptionRel
@@ -72,3 +72,29 @@ install {
         }
     }
 }
+
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+task generateJavadocs(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task generateJavadocsJar(type: Jar) {//, dependsOn: 'generateJavadocs'
+    from generateJavadocs.destinationDir
+    classifier 'javadoc'
+}
+
+//generateJavadocsJar.dependsOn generateJavadocs
+
+//configurations {
+    artifacts {
+        archives generateSourcesJar
+        //archives generateJavaDocsJar
+
+    }
+//}
