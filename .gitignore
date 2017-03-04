@@ -38,3 +38,18 @@ captures/
 
 # Keystore files
 *.jks
+
+.idea/libraries
+.idea/compiler.xml
+.idea/copyright/
+.idea/dictionaries/
+.idea/encodings.xml
+.idea/gradle.xml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations.xml
+vectoroid-android-base/libs/
+vectoroid-android-base/src/androidTest/
+vectoroid-android-base/src/test/
+vectoroid-android-views/libs/
