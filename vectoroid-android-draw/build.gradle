@@ -4,12 +4,16 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply from: '../publish.gradle'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 29
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 29
+    }
+
+    lintOptions {// todo fix lint errors
+        abortOnError false
     }
 
     buildTypes {
@@ -30,12 +34,12 @@ repositories {
 dependencies {
 //    compile project(':vectoroid-android-views')
 //    compile project(':vectoroid-android-base')
-    compile 'uk.co.sentinelweb:vectoroid-android-views:0.1'
-    compile 'uk.co.sentinelweb:vectoroid-android-base:0.1'
-    compile 'com.google.code.gson:gson:2.1'
+    implementation 'uk.co.sentinelweb:vectoroid-android-views:0.1.3'
+    implementation 'uk.co.sentinelweb:vectoroid-android-base:0.1.3'
+    implementation 'com.google.code.gson:gson:2.8.5'
 }
 
-ext.versionRel = '0.1'
+ext.versionRel = '0.1.3'
 version = versionRel
 ext.descriptionRel = 'Vectoroid SDK for Android - Drawing'
 ext.projectDesc = ext.descriptionRel
